@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About me 
+title: 关于博主 
 ---
 
-This is a static page. It could be an 'about page' if you'd like.
+具有14年团队领导经验的程序猿，或者称为攻城狮
