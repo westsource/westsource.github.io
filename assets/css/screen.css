@@ -760,6 +760,9 @@ body:not(.post-template) .post-title {
 
 .read-more {
     text-decoration: none;
+	font-size: 0.9em;
+	font-weight: bold;
+	color: #9EABB3;
 }
 
 .post-meta {
