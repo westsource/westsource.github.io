@@ -1,6 +1,6 @@
 ---
 layout:  post
-title:  CentOS6.5 安装以单机模式安装Spark
+title:  CentOS6.5 以单机模式安装Spark
 date:  2015-07-19 22:18:00
 ---
 
