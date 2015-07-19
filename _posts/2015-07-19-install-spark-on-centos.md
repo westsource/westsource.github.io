@@ -3,6 +3,9 @@ layout:  post
 title:  CentOS6.5 安装以单机模式安装Spark
 date:  2015-07-19 22:18:00
 ---
+
+安装过程包含三步：安装Oracle Java、安装Scala和安装Spark。
+
 #1.安装Oracle Java
 
 ##第一步 卸载原来的Java
