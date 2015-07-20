@@ -98,5 +98,92 @@ date:  2015-07-19 22:18:00
 
 #2.安装Scala
 
+首先下载Scala最新版本：
+
+`wget http://downloads.typesafe.com/scala/2.11.7/scala-2.11.7.tgz`
+
+然后建立放置Scala的文件夹，并将刚才下载的包拷贝到此文件夹中：
+
+`mkdir /usr/local/scala`
+
+`cp scala-2.11.7.tgz /usr/local/scala`
+
+解压：
+
+`tar -zxvf scala-2.11.7.tgz`
+
+再修改profile文件：
+
+`vi /etc/profile`
+
+增加SCALA_HOME，PATH：
+
+> export SCALA_HOME=/usr/local/scala/scala-2.11.7
+
+> export PATH=$JAVA_HOME/bin:$SCALA_HOME/bin:$PATH
+
+然后执行配置文件，令其立刻生效，输入如下命令： 
+
+`source /etc/profile`
+
+最后，我们测试一下，输入以下语句：
+
+`scala`
+
+以下是我的服务器的返回：
+
+> Welcome to Scala version 2.11.7 (Java HotSpot(TM) 64-Bit Server VM, Java 1.7.0_60).
+
+> Type in expressions to have them evaluated.
+
+> Type :help for more information.
+
+> scala> 
+
+OK，Scala安装成功了。
 
 #3.安装Spark
+
+同样的，首先下载Spark for Hadoop的最新版本（单机）：
+
+`wget http://d3kbcqa49mib13.cloudfront.net/spark-1.4.1-bin-hadoop2.6.tgz`
+
+然后建立放置Spark的文件夹，并将刚才下载的包拷贝到此文件夹中，解压：
+
+`mkdir /usr/local/spark`
+
+`cp spark-1.4.1-bin-hadoop2.6.tgz /usr/local/spark`
+
+`tar -zxvf spark-1.4.1-bin-hadoop2.6.tgz`
+
+编辑profile文件，增加SPARK_HOME：
+
+`vi /etc/profile`
+
+> export SPARK_HOME=/usr/spark/spark/spark-1.4.1-bin-hadoop2.6
+
+然后，我们到Spark目录中执行一下Spark Shell交互脚本：
+
+`cd /usr/local/spark/spark-1.4.1-bin-hadoop2.6`
+
+`bin/spark-shell`
+
+然后，编写一点测试的代码：
+
+> scala> val textFile = sc.textFile("README.md")
+
+> scala> textFile.count()
+
+看看我的执行结果：
+
+> xxx
+>
+> xxx
+> 
+> res0: Long = 127
+
+OK，大功告成了。
+
+咱还可以看看WEB监控页面：
+
+![WEB监控台](/images/2015-07-20_22-32-12)
