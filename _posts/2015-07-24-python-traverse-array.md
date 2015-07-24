@@ -8,11 +8,11 @@ Python遍历数组有两种办法，一种通过for in遍历数组，一种为�
 
 #第一种，通过for in遍历数组
 
-`colours = ["red","green","blue"]'
+`colours = ["red","green","blue"]`
 
-`for colour in colours:'
+`for colour in colours:`
 
-`    print(colour)'
+`    print(colour)`
 
 输出
 
