@@ -29,15 +29,20 @@ http://www.jb51.net/article/34011.htm
 
 #第3步：解压已下载的二进制包并编译安装 
 
-首先下载JDK包
+`tar -zxvf Python-3.4.3.tgz`
 
-`tar -jxvf Python-3.4.3.tgz`
 `cd Python-3.4.3` 
+
 `./configure`
+
 `make all`
+
 `make install` 
+
 `make clean` 
+
 `make distclean` 
+
 `/usr/local/bin/python3 –V `
 
 #第4步：建立软连接指向到当前系统默认python命令的bin目录
